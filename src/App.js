@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import MainPage from "./page/MainPage";
+import 'antd/dist/antd.css';
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
-  return (
+  return (<Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <MainPage />
     </div>
+  </Provider>
+
   );
 }
 

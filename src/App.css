@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background: #333;
 }
 
 .App-logo {
@@ -35,4 +37,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+.main-page{
+  position: relative;
+  z-index: 1;
+}
+.input-box{
+  width: fit-content;
+  background: #FECF07;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%,-10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.search-input{
+  width: 100%;
 }
